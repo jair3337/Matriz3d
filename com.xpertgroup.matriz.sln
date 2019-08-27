@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.xpertgroup.matriz.UI", "com.xpertgroup.matriz.UI\com.xpertgroup.matriz.UI.csproj", "{51E6A7F2-56D3-463D-8738-D24FD9334132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.xpertgroup.matriz.BLL", "com.xpertgroup.BLL\com.xpertgroup.matriz.BLL.csproj", "{11989817-D5C7-420C-B4A3-0F1618E9C648}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.xpertgroup.matriz.Domain", "com.xpertgroup.matriz.Domain\com.xpertgroup.matriz.Domain.csproj", "{A6024C47-0EBA-482F-8AA8-DEFA5BEE2244}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.xpertgroup.matriz.Test", "com.xpertgroup.matriz.Test\com.xpertgroup.matriz.Test.csproj", "{DB8388E0-6F2C-4A58-8711-A9DAD253D179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "com.xpertgroup.matriz.Service", "com.xpertgroup.matriz.Service\com.xpertgroup.matriz.Service.csproj", "{E6A29DAD-6193-4955-B61C-4D3512073C8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51E6A7F2-56D3-463D-8738-D24FD9334132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E6A7F2-56D3-463D-8738-D24FD9334132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E6A7F2-56D3-463D-8738-D24FD9334132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E6A7F2-56D3-463D-8738-D24FD9334132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11989817-D5C7-420C-B4A3-0F1618E9C648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11989817-D5C7-420C-B4A3-0F1618E9C648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11989817-D5C7-420C-B4A3-0F1618E9C648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11989817-D5C7-420C-B4A3-0F1618E9C648}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6024C47-0EBA-482F-8AA8-DEFA5BEE2244}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6024C47-0EBA-482F-8AA8-DEFA5BEE2244}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6024C47-0EBA-482F-8AA8-DEFA5BEE2244}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6024C47-0EBA-482F-8AA8-DEFA5BEE2244}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB8388E0-6F2C-4A58-8711-A9DAD253D179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB8388E0-6F2C-4A58-8711-A9DAD253D179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB8388E0-6F2C-4A58-8711-A9DAD253D179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB8388E0-6F2C-4A58-8711-A9DAD253D179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A29DAD-6193-4955-B61C-4D3512073C8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6A29DAD-6193-4955-B61C-4D3512073C8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6A29DAD-6193-4955-B61C-4D3512073C8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A29DAD-6193-4955-B61C-4D3512073C8E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16847E0C-C88D-43C1-82E6-8F76CF3D72AE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,147 @@
+﻿@using com.xpertgroup.matriz.Domain
+@model ObjectRequest
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Matriz 3D XpertGroup</h1>
+    <p class="lead">Prueba realizada por Jair Rodriguez</p>
+</div>
+<p>Agregue los valores de la matriz y la cantidad de consultas a realizar {{firstName}}</p>
+<form id="requestForm" class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <label>Cantidad de Casos</label>
+            <input class="form-control" type="number" max="{{form.N}}" name="name" value="" ng-model="Cases" />
+        </div>
+    </div>
+</form>
+
+<div ng-show="Cases > 0" class="container-fluid" style="margin: 10px 0;">
+    <form id="requestForm" class="container-fluid">
+        <div class="row">
+            <div class="col-lg-6">
+                <label>Valor de lista (N)</label>
+                <input class="form-control" type="number" max="{{form.N}}" name="name" value="" ng-model="form.N" />
+            </div>
+            <div class="col-lg-6">
+                <label>Cantidad de Operaciones (M)</label>
+                <input class="form-control" type="number" max="{{form.N}}" name="name" value="" ng-model="form.M" />
+            </div>
+        </div>
+        <div class="row" style="margin-top:15px;">
+            <div class="col-lg-12">
+                <button class="btn btn-info" type="button" ng-click="Init(); initialize = 1">Generar</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<div ng-show="initialize == 1">
+
+    <div class="container-fluid" ng-show="Cases > 0 " style="margin: 10px 0;">
+    
+        <div class="row">
+            <div class="col-lg-12">
+                <label>Valor de lista (N)</label>
+                <select class="form-control" name="name" ng-model="TypeQuery">
+                    <option value="1">Query</option>
+                    <option value="2">Update</option>
+                </select>
+            </div>
+        </div>
+
+        </div>
+
+
+    <div class="container-fluid" ng-show="Cases > 0" style="margin: 10px 0;">
+
+        <form ng-show="TypeQuery==1">
+
+            <div class="row">
+            
+                <div class="col-lg-4">
+                    <label>X1</label>
+                    <input type="number" max="{{form.N}}" class=" form-control" ng-model="RequestQuery.X1" />
+                </div>
+
+                <div class="col-lg-4">
+                    <label>Y1</label>
+                    <input type="number" max="{{form.N}}" class=" form-control" ng-model="RequestQuery.Y1" />
+                </div>
+
+                <div class="col-lg-4">
+                    <label>Z1</label>
+                    <input type="number" max="{{form.N}}" class=" form-control" ng-model="RequestQuery.Z1" />
+                </div>
+
+                <div class="col-lg-4">
+                    <label>X2</label>
+                    <input type="number" max="{{form.N}}" class=" form-control" ng-model="RequestQuery.X2" />
+                </div>
+
+                <div class="col-lg-4">
+                    <label>Y2</label>
+                    <input type="number" max="{{form.N}}" class=" form-control" ng-model="RequestQuery.Y2" />
+                </div>
+
+                <div class="col-lg-4">
+                    <label>Z2</label>
+                    <input type="number" max="{{form.N}}" class=" form-control" ng-model="RequestQuery.Z2" />
+                </div>
+
+            </div>
+
+            <div class="row" ng-show="TypeQuery==1">
+                <div class="col-lg-12">
+                    <button class="btn btn-info" type="button" ng-click="Query()">Consultar</button>
+                </div>
+            </div>
+
+        </form>
+
+
+        <!-- actualizar -->
+
+        <form ng-show="TypeQuery==2">
+
+            <div class="row">
+                <div class="col-lg-3">
+                    <label>X</label>
+                    <input type="number" max="{{form.N}}" class=" form-control" ng-model="RequestUpdate.X" />
+                </div>
+                <div class="col-lg-3">
+                    <label>Y</label>
+                    <input type="number" max="{{form.N}}" class=" form-control" ng-model="RequestUpdate.Y" />
+                </div>
+                <div class="col-lg-3">
+                    <label>Z</label>
+                    <input type="number" max="{{form.N}}" class=" form-control" ng-model="RequestUpdate.Z" />
+                </div>
+                <div class="col-lg-3">
+                    <label>Value</label>
+                    <input type="number" max="{{form.N}}" class="col-lg-3 form-control" ng-model="RequestUpdate.Value" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <button class="btn btn-info" type="button" ng-click="Update()">Actualizar</button>
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                El resultado es: {{Value.data}}
+            </div>
+        </div>
+    </div>
+
+</div>
